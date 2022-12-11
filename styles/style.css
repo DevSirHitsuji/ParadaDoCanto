@@ -1,0 +1,74 @@
+html, 
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(73, 73, 73);
+}
+
+header img{
+    width: 50px;
+}
+
+.menuIcon{
+    width: 40px;
+}
+
+nav{
+    flex-direction: column;
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    height: 300px;
+    width: 150px;
+
+    justify-content: space-around;
+    padding: 20px;
+    background-color: aqua;
+}
+
+
+section{
+    margin: 10px;
+    padding: 5px;
+
+    background-color: rgba(0, 0, 0, 0.226);
+}
+.pacotes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pacote{
+    width: 115px;
+    background-color: rgba(0, 0, 0, 0.31);
+    padding: 5px;
+    margin: 3px;
+}
+
+.pacote h3{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+section h2{
+    align-self: center;
+}
+
+
+#mapa{
+    width: 90%;
+    align-self: center;
+}
+
