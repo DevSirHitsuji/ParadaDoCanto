@@ -10,18 +10,23 @@
 </head>
 <body>
     <header>
-        <nav id="nave" style="display: none">
-            <a href="#sobre">sobre</a>
-            <a href="#espaco">espaços</a>
-            <a href="#cardapio">cardápio</a>
-            <a href="#maps">como chegar</a>
-            <a href="#contato">contatos</a>
+        <nav class="invisible" id="nave" style="display: none">
+
+            <div  id="back" onclick="show()">
+                <img src="assets/icons/back.svg" alt="back .icon">
+            </div>
+
+            <a onclick="show()" href="#sobre">sobre</a>
+            <a onclick="show()" href="#espaco">espaços</a>
+            <a onclick="show()" href="#cardapio">cardápio</a>
+            <a onclick="show()" href="#maps">como chegar</a>
+            <a onclick="show()" href="#contato">contatos</a>
         </nav>
-        <div id="btnMenu" onclick="show()" style="left: 0px;">
-            <img class="menuIcon" src="assets/icons/menuicon.png" alt="menu .icon">
+        <div id="btnMenu" onclick="show()">
+            <img class="menuIcon" src="assets/icons/menu.svg" alt="menu .icon">
         </div>
 
-        <img src="assets/images/logo.png" alt="logo .logo">
+        <img src="assets/images/logoWithoutBg.png" alt="logo .logo">
     </header>
 
 
@@ -58,7 +63,9 @@
                         - 2 microfones<br>
                         - 1 hora<br>
                     </p>
-                    <h3>R$ 15</h3>
+                    <h4>R$ 15</h4>
+
+                    <button name="comprar" onclick="Default()">comprar</button>
                 </div>
 
                 <div class="pacote">
@@ -68,7 +75,9 @@
                         - 4 microfones<br>
                         - 2 horas<br>
                     </p>
-                    <h3>R$ 30</h3>
+                    <h4>R$ 30</h4>
+
+                    <button name="comprar" onclick="Default()">comprar</button>
                 </div>
 
                 <div class="pacote">
@@ -78,7 +87,9 @@
                         - 5 microfones<br>
                         - 3 horas<br>
                     </p>
-                    <h3>R$ 50</h3>
+                    <h4>R$ 50</h4>
+
+                    <button name="comprar" onclick="Default()">comprar</button>
                 </div>
 
                 <p>Para aniversarios entre em contato para negociações</p>
@@ -128,17 +139,21 @@
             </iframe>
         </section>
 
-        <section id="contato">
-            <h2>contatos</h2>
-            <p>
-                Telefone: 98 97321-8903 <br>
-                Email: paradadocanto@gmail.com <br>
-                Instagram: @paradadocanto <br>
-                Facebook: paradadocanto <br>
-
-            </p>
-        </section>
-
     </main>
+    <footer id="contato">
+        <div>
+            <a href="">
+                <img src="assets/icons/insta.svg" alt="insta .icon">
+            </a>
+
+            <a href="">
+                <img src="assets/icons/face.svg" alt="facebook .icon">
+            </a>
+        </div>
+        <p>Telefone: 98 98374-8342</p>
+        <p>Email: paradadocanto@gmail.com</p>
+        <p>CE Musical Ltda. | CNPJ 14.342.983/0002-31</p>
+        <p>AV Rei de França, N 231, São Luis, Maranhão, CEP: 65068-830</p>
+    </footer>
 </body>
 </html>
