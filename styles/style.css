@@ -2,16 +2,19 @@ html,
 body{
     margin: 0px;
     padding: 0px;
-    background-color: var(--violet);
+    background-color: var(--goldv1);
+    color: whitesmoke;
 }
 
 :root {
-    --blueMarine: rgb(3, 255, 217);
-    --blue: rgb(0, 204, 208);
-    --purple: rgb(175, 0, 206);
-    --violet: rgb(117, 0, 200);
+    --blackv1: #0d0d0d;
+    --blackv2: #020A0E;
+    --greenv1: #020F14;
+    --grayv1: #202D40;
+    --grayv2: #677189;
+    --goldv1: #BD7418;
+    --whitev1: #e2e2e2;
 }
-
 
 /* header */
 header{
@@ -24,10 +27,10 @@ header{
     left: 0px;
     right: 0px;
 
-    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.355);
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.674);
 
     padding: 5px;
-    background: linear-gradient(to right,var(--blue), var(--purple) );
+    background: linear-gradient(to right, var(--goldv1), var(--blackv1));
 
 }
 
@@ -73,7 +76,7 @@ nav{
     align-items: center;
     padding: 20px;
 
-    background: linear-gradient(to right,var(--blue), var(--purple) );
+    background: linear-gradient(to right,var(--goldv1), var(--blackv1) );
     animation: appear 0.5s;
 
     box-shadow: 0px 3px 10px 5px black;
@@ -96,14 +99,18 @@ nav a:hover {
 
 /* main */
 main{
-    margin-top:100px;
+    margin-top: 70px;
 }
 
 section{
     margin: 10px;
     padding: 5px;
 
-    background-color: var(--blueMarine);
+    background-color: var(--blackv1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.88);
+
+    border-top: solid 2px rgba(255, 255, 255, 0.33);
+    border-left: solid 2px rgba(255, 255, 255, 0.163) ;
 }
 
 section h3{
@@ -126,7 +133,6 @@ section h3{
     flex-direction: column;
 
     width: 80%;
-    height: 200px;
 
     background-color: rgba(0, 0, 0, 0.31);
     border: solid 1px black;
@@ -139,6 +145,15 @@ section h3{
     font-size: 150%;
     margin: 0px;
     align-self: center;
+}
+
+.pacote h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.pacote button {
+    margin: 2px;
 }
 
 #cardapio{
@@ -167,7 +182,20 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--blackv1);
 
     font-size: 15px;
+}
+
+footer p{
+    margin: 10px;
+}
+
+footer a{
+    color: var(--goldv1);
+}
+
+a img{
+    background-color: #ffffff51;
+    border-radius: 5px;
 }
