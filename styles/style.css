@@ -33,6 +33,9 @@ header{
     background: linear-gradient(to right, var(--goldv1), var(--blackv1));
 
 }
+#credit {
+    display: none;
+}
 
 header h1 {
     margin: 0px;
@@ -63,7 +66,7 @@ header img{
     }
 }
 
-nav{
+#nave{
     flex-direction: column;
     position: absolute;
 
@@ -82,7 +85,8 @@ nav{
     box-shadow: 0px 3px 10px 5px black;
 }
 
-nav a {
+
+#nave a {
     text-decoration: none;
     color: black;
     font-size: 25px;
@@ -93,8 +97,12 @@ nav a {
     text-align: center;
 }
 
-nav a:hover {
+#nave a:hover {
     text-decoration: underline;
+}
+
+.desktopmenu{
+    display: none;
 }
 
 /* main */
@@ -198,4 +206,70 @@ footer a{
 a img{
     background-color: #ffffff51;
     border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        margin-left: 20%;
+    }
+
+    main{
+        margin-top: 5px;
+    } 
+
+    header{
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 30%;
+        bottom: 0px;
+        right: 80%;
+    }
+
+    header a {
+        font-size: 200%;
+        color: white;
+        margin-bottom: 20px;
+        text-decoration: none;
+
+    }
+    
+    header a:hover{
+        text-decoration: underline;
+    }
+    header h1{
+        display: none;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    #credit{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    .desktopmenu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #back, #btnMenu{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .pacotes{
+        flex-wrap: nowrap;
+    }
+    .aviso{
+        text-align: center;
+    }
+
 }
